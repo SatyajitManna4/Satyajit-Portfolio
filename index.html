@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyajit - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Satyajit Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Project</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Satyajit </span>
+                <div>and I am passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="images/SATYAJIT_MANNA_CV.pdf" download="Satyajit Resume.pdf">
+                        <button class="bttn">Download Resume</button>
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/SatyajitManna4" target="_blank">
+                        <img src="images/gitHub logo.webp" alt="GitHub" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/satyajit-manna-43bbb5301/" target="_blank">
+                        <img src="images/linkedIn logo.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://www.facebook.com/satyajit.manna.481503" target="_blank">
+                        <img src="images/facebook logo.jpeg" alt="Facebook" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="images/bg.png" alt="background image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-rights">
+            <p>copyright &#169 Satyajitportfolio.com | All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Android Developer.', 'Web Developer.'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
