@@ -320,3 +320,7 @@
         .card img:hover {
             transform: scale(1.1);
         }
+        /* liveP not working */
+        .div.card.liveP{ 
+            margin-top: 10px;
+        } 
