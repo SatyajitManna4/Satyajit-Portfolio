@@ -86,19 +86,19 @@
 
         /* footer part */
         footer {
-            background-color: #171738;
-            height: 90px;
-            display: flex;
+            background-color: #070710;
+            height: 200px;
             justify-content: center;
+            display: flex;  
             align-items: center;
         }
-
+        
         .footer-rights {
             max-width: 1200px;
             width: 100%;
             text-align: center;
             padding: 12px 0;
-            color: #d3d3d3;
+            color: #c8c2c2;
             /* Light gray for better contrast */
         }
 
