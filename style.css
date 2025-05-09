@@ -34,7 +34,7 @@
 
         nav ul li a:hover {
             color: rgb(159, 159, 244);
-            font-size: 1.03 rem;
+            font-size: 1.03rem;
         }
 
         .left {
@@ -89,10 +89,10 @@
             background-color: #070710;
             height: 200px;
             justify-content: center;
-            display: flex;  
+            display: flex;
             align-items: center;
         }
-        
+
         .footer-rights {
             max-width: 1200px;
             width: 100%;
@@ -184,7 +184,7 @@
         .card img {
             size: 10px;
         }
-        
+
 
         .card:hover {
             transform: translateY(-5px);
@@ -199,6 +199,7 @@
             color: white;
             text-decoration: none;
         }
+
         /* .card p{
            text-align: center;
         } */
@@ -209,7 +210,7 @@
 
 
         /*This is about.html css */
-        
+
         .about-container {
             display: flex;
             flex-wrap: wrap;
@@ -299,28 +300,143 @@
         }
 
         /* projects */
-        .card-grid-p{
+        .card-grid-p {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
+
         .visit-github img {
             width: 32px;
             height: 32px;
             border-radius: 6px;
             transition: transform 0.3s;
         }
+
         .card img {
             width: 32px;
             height: 32px;
             border-radius: 6px;
             transition: transform 0.3s;
         }
+
         .card img:hover {
             transform: scale(1.1);
         }
+
         /* liveP not working */
-        .div.card.liveP{ 
+        .div.card.liveP {
             margin-top: 10px;
-        } 
+        }
+
+        /* add code for responsive website  */
+
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+                margin: 50px 0;
+            }
+
+            .firstsection>div {
+                width: 80%;
+            }
+
+            .leftsection {
+                font-size: 1.8rem;
+            }
+
+            .rightsection img {
+                width: 100%;
+            }
+
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-panel,
+            .right-panel {
+                width: 100%;
+                margin: 0;
+            }
+
+            .right-panel h1 {
+                text-align: center;
+                font-size: 28px;
+            }
+
+            .details p {
+                margin: 20px 0;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .left {
+                margin-bottom: 10px;
+                font-size: 1.3rem;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            .contact-section {
+                padding: 20px;
+            }
+
+            .card-grid,
+            .card-grid-p {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .profile-img {
+                width: 140px;
+                height: 140px;
+            }
+
+            .footer-rights {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .leftsection {
+                font-size: 1.2rem;
+            }
+
+            .leftsection .bttn {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            .rightsection img {
+                width: 90%;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .right-panel h1 {
+                font-size: 24px;
+            }
+        }
