@@ -440,3 +440,46 @@
                 font-size: 24px;
             }
         }
+
+        .hamburger {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Responsive menu toggle */
+        @media screen and (max-width: 768px) {
+            nav {
+                position: relative;
+            }
+
+            .hamburger {
+                display: block;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                z-index: 1001;
+            }
+
+            nav .right ul {
+                display: none;
+                flex-direction: column;
+                background-color: rgb(10, 10, 69);
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                z-index: 1000;
+                padding: 10px 0;
+            }
+
+            nav .right ul.show {
+                display: flex;
+            }
+
+            nav .right ul li {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
